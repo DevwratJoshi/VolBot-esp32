@@ -1,4 +1,4 @@
-# esp32-servo
+# VolBot-esp32
 A collection of micropython code used to program a VolBot prototype
 
 The Volbot prototype was produced to verify the simulations from the VolBotSims repository, found here: 
