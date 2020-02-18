@@ -3,16 +3,16 @@
 #esp.osdebug(None)
 
 import network 
-import wifi_init as wi
+import config
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
 
 b = [code[0] for code in wlan.scan()]
 
-if wi.bunri_wifi["ssid"] in b :
+if config.bunri_wifi["ssid"] in b :
 	print("Found lab network")
-	wlan.connect(wi.bunri_wifi["ssid"], wi.bunri_wifi["pass"]) 
+	wlan.connect(config.bunri_wifi["ssid"], config.bunri_wifi["pass"]) 
 
 import main
 
